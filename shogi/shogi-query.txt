@@ -1,4 +1,4 @@
-! name: Atsushi
+! name: Shogi sites/将棋のサイト
 ! description: Goggle for Shogi community in Japan/日本の将棋コミュニティのためのGoggle
 ! public: true
 ! author: Atsushi
@@ -33,8 +33,6 @@ $boost=1,site=abema.tv
 $boost=1,site=www3.nhk.or.jp
 
 
-
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Goggles are simple, self-contained text files which can be hosted in Github or
 ! Gitlab. These files contain instructions allowing you to tell Brave Search how
@@ -62,12 +60,12 @@ $boost=1,site=www3.nhk.or.jp
 ! The simplest instruction is a plain-text pattern which can be found in URLs.
 ! The following would match any search result whose URL contains the pattern
 ! as-is:
-/this/is/a/pattern
+! /this/is/a/pattern
 
 ! It is also possible to use some limited "globbing" capabilities such as the
 ! '*' character which will match zero, one or more characters (note: the number
 ! of wildcards allowed in a given instruction is limited):
-/this/is/*/pattern
+! /this/is/*/pattern
 
 ! The special character '^' can be used to indicate that an URL delimiter such
 ! as '/' or end-of-url can be matched. More specifically, '^' is equivalent to
@@ -96,9 +94,9 @@ $boost=1,site=www3.nhk.or.jp
 !
 ! Also note that the maximum number of carets allowed in a given instruction is
 ! limited.
-/this/is/a/pattern^
-|https://example.org^
-/foo.js^
+! /this/is/a/pattern^
+! |https://example.org^
+! /foo.js^
 
 ! By default, a pattern can match anywhere in the URL, but there are specific
 ! characters which can be used to indicate prefix or suffix matches: we call them
@@ -109,10 +107,10 @@ $boost=1,site=www3.nhk.or.jp
 |https://en.
 
 ! The following will match a suffix of the URL:
-/some/path.html|
+! /some/path.html|
 
 ! Both can be used at the same time:
-|https://brave.com|
+! |https://brave.com|
 
 ! Additionally, each instruction can specify a list of options, following the
 ! '$' character and separated by commas (','). Options can be used to more finely
@@ -123,8 +121,8 @@ $boost=1,site=www3.nhk.or.jp
 ! a specific website, based on its domain. Options can be specified on their own
 ! (e.g. if you want to target any page of a site) or in conjunction with a
 ! pattern:
-$site=brave.com
-/blog/$site=brave.com
+! $site=brave.com
+! /blog/$site=brave.com
 
 ! Another set of options can be used to indicate what you want your instruction
 ! to target. By default any instruction will apply to a URL, but we will add the
@@ -140,10 +138,10 @@ $site=brave.com
 ! through which you can customize the ranking of results to your liking. You can
 ! use one of three possible actions in your instructions, and by default, any
 ! instruction without an action will be considered as 'boost':
-/r/brave_browser/
-/r/brave_browser/$boost
-/r/brave_browser/$boost=2
-/r/brave_browser/$boost=3
+! /r/brave_browser/
+! /r/brave_browser/$boost
+! /r/brave_browser/$boost=2
+! /r/brave_browser/$boost=3
 
 ! The value associated with the option indicate the 'strength' with which you
 ! want to alter the ranking (note: that it is currently limited to a maximum
@@ -151,13 +149,13 @@ $site=brave.com
 ! same Goggle (e.g. some results should be favored more than others).
 !
 ! You can also downrank results:
-/r/google/$downrank
-/r/google/$downrank=2
-/r/google/$downrank=3
+! /r/google/$downrank
+! /r/google/$downrank=2
+! /r/google/$downrank=3
 
 ! Last but not least, you can discard results completely:
-$discard,site=idontwanttobepartoftheresults.com
-/this/is/spam/$discard
+! $discard,site=idontwanttobepartoftheresults.com
+! /this/is/spam/$discard
 
 ! Individually, each instruction can either target a very narrow set of pages (or
 ! even a single page), or a wider range of them, to apply reranking to a bigger
