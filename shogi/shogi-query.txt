@@ -3,34 +3,77 @@
 ! public: true
 ! author: Atsushi
 
-! --- SHOGI.OR.JP ---!
-$boost=2,site=shogi.or.jp
-/news^$boost=3,site=shogi.or.jp
+! --- [BOOST]WEB SITES ---!
+$boost=3,site=shogi.or.jp
+$boost=3,site=shogi.jp
+$boost=3,site=shogidata.info
+$boost=3,site=shogidb2.com
+$boost=3,site=shogi-salon.com
+$boost=3,site=shogitown.com
+$boost=3,site=shogi-books.com
+$boost=3,site=igoshogi.net
 
-! --- WEB SITES ---!
-$boost=2,site=shogidata.info
-$boost=2,site=dic.nicovideo.jp
-$boost=2,site=ja.wikipedia.org
-$boost=2,site=twitter.com
-$boost=2,site=shogidb2.com
-$boost=2,site=shogi-salon.com
-$boost=2,site=shogitown.com
-$boost=2,site=shogi-books.com
+$boost=3,site=shoginoiroha.com
+$boost=3,site=shogi-rule.com
+$boost=3,site=bodoge-intl.com
+$boost=3,site=shogilounge.com
+$boost=3,site=shogi-joutatsu.com
+$boost=3,site=misojinn.com
 
-! --- BLOG ---!
-$boost=2,site=kyoki-scientist.com
-$boost=2,site=note.com
+$boost=1,site=dic.nicovideo.jp
+$boost=1,site=ja.wikipedia.org
+$boost=1,site=twitter.com
 
-! --- NEWS SITES ---!
+! --- [BOOST]BLOG ---!
+$boost=3,site=kyoki-scientist.com
+$boost=3,site=kifulog.shogi.or.jp
+$boost=3,site=arakippe.com
+$boost=3,site=hibitonshi.com
+$boost=3,site=betelpalm.hatenablog.com
+$boost=3,site=you-kyan.work
+$boost=3,site=taka11281.livedoor.blog
+$boost=3,site=rssblog.ameba.jp
+$boost=3,site=happyshogi.xyz
+$boost=3,site=kifulog.shogi.or.jp
+
+/syougichan$boost=3,site=blog.livedoor.jp
+
+! --- [BOOST]BLOG BY PROFESSIONAL PLAYERS ---!
+$boost=3,site=toyama-shogi.com
+$boost=3,site=shogi-daichan.com
+
+/henry12$boost=3,site=blog.livedoor.jp
+/noanosorairo$boost=3,site=ameblo.jp
+/nmirai-227$boost=3,site=ameblo.jp
+/iomuu$boost=3,site=note.com
+/yamahiro3ken$boost=3,site=note.com
+/kishi-akira$boost=3,site=blog.goo.ne.jp
+
+$boost=1,site=note.com
+$boost=1,site=ameblo.jp
+
+! --- [BOOST]TWITTER(X) ---!
+/yoshiharuhabu$boost=3,site=twitter.com
+/tetsu_59$boost=3,site=twitter.com
+/shogidaichan$boost=3,site=twitter.com
+/asahi_shogi$boost=3,site=twitter.com
+/funnytoyama$boost=3,site=twitter.com
+
+
+! --- [BOOST]NEWS SITES ---!
+$boost=1,site=abema.tv
+$boost=1,site=nhk.or.jp
 $boost=1,site=yomiuri.co.jp
-$boost=1,site=bunshun.jp
-$boost=1,site=chunichi.co.jp
-$boost=1,site=goetheweb.jp
 $boost=1,site=asahi.com
 $boost=1,site=tokyo-np.co.jp
-$boost=1,site=hochi.news
-$boost=1,site=abema.tv
-$boost=1,site=www3.nhk.or.jp
+
+
+! --- [DOWNRANK]NEWS SITES ---!
+$downrank=3,site=bunshun.jp
+$downrank=3,site=chunichi.co.jp
+$downrank=3,site=goetheweb.jp
+$downrank=3,site=tokyo-np.co.jp
+$downrank=3,site=hochi.news
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
